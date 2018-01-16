@@ -3925,7 +3925,7 @@ var cf;
             }
         };
         UserInputElement.ERROR_TIME = 2000;
-        UserInputElement.preventAutoFocus = false;
+        UserInputElement.preventAutoFocus = true;
         UserInputElement.hideUserInputOnNoneTextInput = false;
         return UserInputElement;
     }(cf.BasicElement));

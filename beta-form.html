@@ -55,12 +55,12 @@
 !-->
 <body>
   <nav>
-    <div class="" style="padding: 20px 0px 10px 0; background-color: #0871de; ">
+    <div class="" style="padding: 15px 0px 10px 0; background-color: #0871de; ">
       <div class="col-12 spread">
         <div>
         <!-- Logo -->
         <a class="logo" href="./index.html">
-        <img src="img/beta.png" style="max-height: 100%; height: 40px; padding-left: 30px">
+        <img src="img/logo-w.png" style="max-height: 100%; height: 40px; padding-left: 30px">
         </a>
         <!-- Logo -->
         </div>
@@ -81,21 +81,16 @@
         <div class="browser">
           <div class="mask">
             <form class="mask-img" id="form">
-              <fieldset>
-<label for="name">What's your name?</label>
-<input required cf-questions="Hey,
-         
-It looks like you caught us before we're ready!
-
-CoForm is still in development but we’re working hard to finish it up.
-
-If you'd like early access and early adopter pricing, just drop your email in the box below 😁" type="text" class="form-control" name="name" id="name"/>
-</fieldset>
 
 
               <fieldset>
                 <label for="email">Email</label>
-                <input pattern=".+\@.+\..+" cf-error="E-mail not correct" cf-questions="If you want to get early access to CoForm and beta pricing, drop your email below!" type="email" class="form-control" name="email" id="your-email">
+                <input pattern=".+\@.+\..+" cf-error="E-mail not correct" required cf-questions="
+It looks like you caught us before we're ready!
+
+CoForm is still under development but we’re working hard to finish it up.
+
+If you want to get early access and beta pricing, drop your email below 😊" type="email" class="form-control" name="email" id="your-email">
               </fieldset>
 
               <fieldset style="display: none;">
@@ -157,3 +152,4 @@ If you'd like early access and early adopter pricing, just drop your email in th
 </body>
 
 </html>
+

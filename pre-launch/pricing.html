@@ -1,0 +1,248 @@
+<!--
+|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+| START LANDING PAGE
+|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+!-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--
+|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+| START META
+|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+!-->
+<title>CoForm | Conversational Web Forms</title>
+<!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="CoForm allows you easily turn any form element on a web page into a conversational form interface.">
+  <meta name="keywords" content="conversational interfaces, conversational form, interface, bot, cui">
+  <link rel="icon" href="../assets/favicon.ico">
+  <link rel="publisher" href=""/>
+<!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content=""/>
+  <meta name="twitter:creator" content="">
+  <meta name="twitter:title" content="Turning web forms into conversations"/>
+  <meta name="twitter:description" content="CoForm allows you to easily turn any form element on a web page into a conversational form interface."/>
+  <meta name="twitter:image" content="" />
+
+<!-- Open Graph data -->
+  <meta property="og:title" content="Turning web forms into conversations"/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:image" content="" />
+<!--
+|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+| START STYLESHEETS - SHOULD CLEAN UP
+|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+!-->
+<link href="../css/core.min.css" rel="stylesheet">
+<link href="../css/payup.min.css" rel="stylesheet">
+<link href="../css/style.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../css/main.css">
+<link rel="stylesheet" type="text/css" href="assets/css/main.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="assets/css/flexboxgrid.min.css" media="screen" />
+<link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+<!--
+|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+| FAVICONS
+|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+!-->
+<link rel="icon" type="image/png" href="../img/favicon.png">
+<!--
+|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+| HOTJAR TRACKING
+|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+!-
+<script>
+      (function(h,o,t,j,a,r){
+          h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+          h._hjSettings={hjid:584216,hjsv:5};
+          a=o.getElementsByTagName('head')[0];
+          r=o.createElement('script');r.async=1;
+          r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+          a.appendChild(r);
+      })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+  </script>
+<!--
+|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+| GOOGLE ANALYTICS
+|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+!-
+<script>
+  function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', '', 'auto');
+  ga('send', 'pageview');
+</script>
+</head>
+<body>
+<!--
+|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+| START OF NAVBAR
+|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+!--> 
+<nav class="topbar topbar-expand-sm topbar-sticky" style=" background-color: #fff;position: fixed; -webkit-box-shadow: 10px 7px 104px -37px rgba(138,136,138,1);
+-moz-box-shadow: 10px 7px 104px -37px rgba(138,136,138,1);
+box-shadow: 10px 7px 104px -37px rgba(138,136,138,1);">
+  <div class="container">
+  <div class="topbar-left">
+  <a class="topbar-brand" href="../index.html" >
+  <img class="logo-default" src="../img/logo.png" style="max-height: 100%; height: 30px" alt="Ease logo">
+  </a>
+  </div>
+  <div class="topbar-right">
+        <ul class="topbar-nav nav">
+          <li class="nav-item">
+          <li class="nav-item"><a class="btn btn-lg btn-primary-1 hidden-sm-down" style="background-color: #fff; color:#bcbcbc; border: 2px solid #bcbcbc" href="../beta-form.html">Get Started Free</a></li>
+    </ul>
+  </div>
+  </div>
+</nav>
+<!--
+|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+| START OF DESCRIPTION
+|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+!-->  
+<header class="cf" style="padding: 30px 0 0 0; ">
+  <div class="row center-xs hero">
+  <div class="col-sm-12 col-lg-12">
+  <br><br>
+  <h2 style="font-size: 44px; color: #474747" >Find the perfect plan for your business</h2>
+  <hr class="" style="width: 25%; color: #efe6e1">
+  <p style="font-size: 24px">Sign up now to get our introductory beta pricing</p>
+  </div>
+  </div>
+</header>
+<!--
+|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+| START OF PRICING
+|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+!-->   
+  <main class="main" role="main" id="pricing-c" >
+    <div class="row around-sm">
+      <div class="col-xs-12 col-sm-4">
+        <div class="pricing-container margin-top hidden-md-down" style="background-color: #0871de; margin-bottom: 0px">
+        <p style="color: #fff">Free</p>
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-sm-4">
+        <div class="pricing-container margin-top hidden-md-down" style="background-color: #0871de; margin-bottom: 0px">
+        <p style="color: #fff">Pro</p>
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-sm-4">
+      <div class="hidden-md-down" style="background-color: #3ad09d; margin-top: -30px; margin-bottom: 10px; height: 30px">
+        <p style="color: #fff; text-align: center">Recommended</p>
+        </div>
+        <div class="pricing-container margin-top hidden-md-down" style="background-color: #0871de; margin-bottom: 0px">
+        <p style="color: #fff">Premium</p>
+        </div>
+        </div>
+      <!-- END OF LABELS-->
+      <div class="col-xs-12 col-sm-4">
+        <div class="pricing-container margin-top">
+          <h1 style="color: #5e83ff">$0</h1>
+          <p class="grey">Free Forever. $20 per extra seat.</p>
+          <div style="text-align: left">
+          <p class="margin-top"><i style="color: #35b729" class="ion-checkmark">&nbsp&nbsp</i>1 user and 150 contacts. </p>
+          <p class="margin-top"><i style="color: #35b729" class="ion-checkmark">&nbsp&nbsp</i>Unlimited CoForms</p>
+          <p class="margin-top"><i style="color: #35b729" class="ion-checkmark">&nbsp&nbsp</i>Mailchimp Integration</p>
+          <p class="margin-top"><i style="color: #35b729" class="ion-checkmark">&nbsp&nbsp</i>Google Analytics Integration</p>
+          <p class="margin-top"><i style="color: #35b729" class="ion-checkmark">&nbsp&nbsp</i>2 Pre-Built CoForm Templates</p>  
+          <p class="margin-top"><i style="color: #35b729" class="ion-checkmark">&nbsp&nbsp</i>Voice-Based Forms (Beta)</p><br>
+          </div>
+          <a href="../beta-form.html"><button class="hero-cta">Get Started</button></a>
+          <p class="margin-top" style="font-size: 0.9em">No CC Required. Cancel Anytime</p>
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-sm-4">
+        <div class="pricing-container margin-top">
+          <h1 style="color: #5e83ff">$50</h1>
+          <p class="grey">per month. $15 per extra seat.</p>
+          <div style="text-align: left">
+          <p class="margin-top"><i style="color: #35b729" class="ion-checkmark">&nbsp&nbsp</i>Everything in Free +</p>
+          <p class="margin-top"><i style="color: #35b729" class="ion-checkmark">&nbsp&nbsp</i>1 User and 1.5k Contacts</p>
+          <p class="margin-top"><i style="color: #35b729" class="ion-checkmark">&nbsp&nbsp</i>5 Inbound CoForm Templates</p>
+          <p class="margin-top"><i style="color: #35b729" class="ion-checkmark">&nbsp&nbsp</i>Saved Replies</p>
+          <p class="margin-top"><i style="color: #35b729" class="ion-checkmark">&nbsp&nbsp</i>Integration Set-Up</p>
+          <p class="margin-top"><i style="color: #35b729" class="ion-checkmark">&nbsp&nbsp</i>Live Chat (Coming Soon)</p><br>
+          </div>
+          <a href="../beta-form.html"><button class="hero-cta">Get Started</button></a>
+          <p class="margin-top" style="font-size: 0.9em">&nbsp</p>
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-sm-4">
+        <div class="pricing-container margin-top">
+          <h1 style="color: #5e83ff">$199</h1>
+          <p class="grey">per month. $20 per extra seat.</p>
+          <div style="text-align: left">
+          <p class="margin-top"><i style="color: #35b729" class="ion-checkmark">&nbsp&nbsp</i>Everything in Pro +</p>
+          <p class="margin-top"><i style="color: #35b729" class="ion-checkmark">&nbsp&nbsp</i>1 user and 10k contacts </p>
+          <p class="margin-top"><i style="color: #35b729" class="ion-checkmark">&nbsp&nbsp</i>Knowledgebase Integrations</p>
+          <p class="margin-top"><i style="color: #35b729" class="ion-checkmark">&nbsp&nbsp</i>Custom Branding</p>
+          <p class="margin-top"><i style="color: #35b729" class="ion-checkmark">&nbsp&nbsp</i>Personal Onboarding Specialist</p>
+          <p class="margin-top"><i style="color: #35b729" class="ion-checkmark">&nbsp&nbsp</i>Salesforce Lead Sync & Integration</p><br>
+          </div>
+          <a href="../beta-form.html"><button class="hero-cta">Get Started</button></a>
+          <p class="margin-top" style="font-size: 0.9em">&nbsp</p>
+        </div>
+      </div>
+    </div>
+<!--
+|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+| USD NOTE 
+|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+!--> 
+<div">
+<p style="text-align: right">* All Prices in USD</p>
+</div>
+<!--
+|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+| CTA 
+|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+!--> 
+  <div class="row center" style="padding-top: 150px">
+    <div class="col-lg-12 col-lg-12">
+    <div class="pricing-container"><br>
+      <h3 style="color: #474747">Don't see your plan here?</h3>
+      <br>
+      <p>If you need a customized solution with a little bit more, drop us a line to get something setup just for you.</p>
+      <a href="../beta-form.html"><button style="max-width: 300px" class="hero-cta">Get Started</button><br><br></a>
+      </div>
+    </div>
+  </div>
+ </div>
+</main>
+<!--
+|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+| FOOTER PRIVACY MINI
+|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+!-->
+<footer class="site-footer" style="border-color: #e5e5e5;padding: 5px 0 5px 0; text-align: center;
+">
+ <div class="container-lrg footer-nav flex" style="background-color: #fff; padding: 20px 0px">
+      <a class="nav-link2" style="color: #464646; font-size: 12px"> ©2019 CoForm.io</a>
+      <a class="nav-link" style="color: #464646; font-size: 12px" href="privacy-policy.html">Privacy policy</a>
+
+    </div>
+  </div>
+     </footer>
+<!--
+|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+| END SCRIPTS
+|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+!-->
+</body>
+</html>
+<!--
+|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+!-->

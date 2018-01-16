@@ -1,0 +1,277 @@
+<!--
+|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+| START PAGE
+|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+!-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--
+|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+| START META
+|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+!-->
+<title>CoForm | Conversational Web Forms</title>
+<!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="CoForm allows you to easily turn any form element on a web page into a conversational form interface.">
+  <meta name="keywords" content="conversational interfaces, conversational form, interface, bot, cui">
+  <link rel="icon" href="../assets/favicon.ico">
+  <link rel="publisher" href=""/>
+<!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content=""/>
+  <meta name="twitter:creator" content="">
+  <meta name="twitter:title" content="Turning web forms into conversations"/>
+  <meta name="twitter:description" content="CoForm allows you to easily turn any form element on a web page into a conversational form interface."/>
+  <meta name="twitter:image" content="" />
+
+<!-- Open Graph data -->
+  <meta property="og:title" content="Turning web forms into conversations"/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:image" content="" />
+<!--
+|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+| START STYLESHEETS - SHOULD CLEAN UP
+|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+!-->
+<link rel="stylesheet" type="text/css" href="chatbot-gh-pages/assets/css/style.css">
+<link rel="stylesheet" type="text/css" href="css/form.css">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<link rel="stylesheet" type="text/css" href="css/devices.css">
+<link rel="stylesheet" href="chatbot-gh-pages/assets/css/font-awesome.min.css">
+<link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+<script src="js/form.js" defer></script>
+<script src="chatbot-gh-pages/assets/js/script.js" defer></script>
+<script src="js/modal.js" defer></script>
+<script type="text/javascript" src="conversational-form-master/dist/conversational-form.min.js"></script>
+<!--
+|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+| START FAVICONS
+|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+!-->
+</head>
+<!--
+|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+| BODY START
+|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+!-->
+<body>
+<nav>
+  <div class="container-lrg" style="background-color: #fff; padding: 30px 0px 20px 0px;">
+  <div class="col-12 spread">
+  <div>
+<!-- Logo -->
+  <a class="logo">
+    <img src="img/logo.png" style="max-height: 100%; height: 30px">
+  </a>
+<!-- Logo -->
+ </div>
+  <div>
+  <a class="btn btn-primary-1 btn-lg hidden-sm-down" style="border-color: #FFF; background-color: #fff; color: #bcbcbc; font-weight:600; padding: 14px 35px; text-decoration: none; box-shadow: none" href="#section-features">Learn More</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+  <a class="btn btn-primary-1 btn-lg hidden-sm-down" style="border-color: #bcbcbc; font-weight:600; padding: 14px 35px; text-decoration: none; color: #fff" href="pre-launch/pricing.html">Get Started Free</a>
+  </div>
+  </div>
+</div>
+</nav>
+<!--
+|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+| NAV END
+|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+! -->
+<header class="header h-fullscreen" style="background-color: #f2f6f8">
+<div class="container-lrg flex">
+  <div class="col-6 centervertical">
+    <h1 class="heading" style="color: #1c1c1c"><b>
+     Hello Conversations. Goodbye Forms ✌️</b></h1>
+    <h2 class="paragraph " style="color: #474747">
+    Turning some of the most boring features we encounter online today, the form & survey, into engaging conversations. </h2>
+    <a class="btn btn-md hero-cta" style="color: #fff; text-decoration: none" href="pre-launch/pricing.html">Get Started Free</a>
+      </div>
+      <div class="col-1">
+      </div>
+      <div class="col-5">
+        <div class="sidedevices">
+          <div class="iphone">
+                <img class="" style="z-index:9999" src="img/main.svg">
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </header></div> <div class="dash-section"></div>
+<!-- FEATURE - FOTM -->
+<!-- FEATURE - FOTM -->  
+<div class="feature1">
+  <div class="container-sml">
+  <div class="col-12 text-center">
+    <h3 class="heading" style="color: #1c1c1c"><strong>
+    It's time we redefine web-forms.</strong>
+    </h3><br><div align="center" > <hr class="" style="width: 60%; color: #efe6e1"></div><br>
+    <p class="paragraph">Instantly familiar and always engaging, CoForms lower the barrier to form completetion by rethinking how we display information & capture data - use our chat interface to replace your website forms, marketing surveys and user on-boarding.</p>
+  </div>
+</div>
+ <div class="container-lrg centerdevices col-12"><div style="text-align: center">
+<p class="paragraph"><b>Try us out below 🔥</b></p></div>
+      <div class="browserwrapper">
+        <div class="browser">
+          <div class="mask" style="z-index: 1000">
+<!-- FORM EXAMPLE --> 
+<!-- FORM EXAMPLE -->           
+<form class="mask-img" id="form">
+<fieldset>
+<label for="name">What's your name?</label>
+<input required cf-questions="Hi there! 
+
+Im Rachel the CoForm and I'm on a mission to humanize B2B marketing. 
+
+Who are you? 😊" type="text" class="form-control" name="name" id="name" />
+</fieldset>
+
+<fieldset>
+<label for="occupation">Occupation</label>
+  <div class="radio">
+  <label>
+<input cf-questions="Great to meet you, {previous-answer}! 
+
+And what do you do?" type="radio" name="occupation" id="occupation-1" value="developer">
+                        Developer
+                    </label>
+    </div>
+    <div class="radio">
+      <label>
+                        <input type="radio" name="occupation" id="occupation-2" value="designer">
+                        Designer
+                    </label>
+    </div>
+    <div class="radio">
+      <label>
+                        <input type="radio" name="occupation" id="occupation-3" value="curious-mind">
+                        Marketer
+                    </label>
+    </div>
+    <div class="radio">
+      <label>
+                            <input type="radio" name="occupation" id="occupation-2" value="lost">
+                            Other
+                        </label>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <label for="company">Company</label>
+    <input cf-questions="Interesting, What company do you currently work for?" type="text" class="form-control" name="company" id="company">
+  </fieldset>
+
+  <fieldset>
+<label for="email">Email</label>
+<input pattern=".+\@.+\..+" cf-error="E-mail not correct" cf-questions="Super cool! 
+
+Yikes, It looks like you caught us before we're ready! 
+
+CoForm is currently in private beta. If you want early access drop your email below and I'll make sure someone gets in touch with you shortly 😊 " type="email" class="form-control" name="email" id="your-email">
+</fieldset>
+
+  <fieldset style="display: none;">
+    <label for="thats-all">Are you ready to submit the form?</label>
+    <select cf-questions="Are you ready to submit the form?" name="submit-form" id="submit-form" class="form-control">
+                        <option></option>
+                        <option>Yup</option>
+                    </select>
+  </fieldset>
+
+  <fieldset style="display: none;">
+    <label for="thats-all">Want to start over?</label>
+    <select cf-questions="Want to start over?" name="repeat" id="repeat" class="form-control">
+                        <option></option>
+                        <option>Yes, let's go again</option>
+                    </select>
+  </fieldset>
+
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
+<div id="cf-context" class="dark-theme" role="cf-context" cf-context></div>
+          </div>
+        </div>
+      </div> <div style="text-align: center"><br>
+              <a href="beta-form.html">
+              <p6 class="chat-box__sign" style="color: #bcbcbc;">Create your own CoForm ⚡️ </a></p6></div>
+    </div>
+    <!-- Feature 3 Section -->
+  <div class="feature3" id="section-features">
+    <div class="container-lrg flex" style="text-align: center">
+      <div class="col-4"><br><br>
+        <b class="emoji">
+ <img src="img/code.svg" style="width: 150px; max-width: 100%">
+          </b><br><br>
+        <h3 class="subheading" style="color: #4f4e4e">
+          Marketing Ready
+        </h3>
+        <p class="paragraph" style="color: #444444">
+        You heard that right, just share a link or drop the widget on your site! We also integrate directly with Google Analytics and Mailchimp for all your reporting needs.
+        </p>
+      </div>
+      <div class="col-4">
+      <br><br><br><br>
+        <b class="emoji">
+ <img src="img/convo.svg" style="width: 175px; max-width: 100%">
+          </b><br><br>
+        <h3 class="subheading" style="color: #444444">
+          Built for Conversations
+        </h3>
+        <p class="paragraph" style="color: #4f4e4e">
+          Increase conversion rates by using conversational forms to keep your leads engaged from start to submit and make it easier for your customers to buy from your business.
+        </p>
+      </div>
+      <div class="col-4"><br>
+        <b class="emoji">
+         <img src="img/chat.svg" style="height: 190px; max-width: 100%">
+          </b><br><br>
+        <h3 class="subheading" style="color: #444444">
+          Available 24/7
+        </h3>
+        <p class="paragraph" style="color: #4f4e4e"> Free up your Sales reps time and qualify the best inbound prospects with our easy to use CoForms + PlayBooks. Say goodbye to forms and hello to conversations.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- -->
+  <!--
+|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+| CTA
+|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+!-->
+<footer style="border-top: 0px solid #e8ecff;"">
+  <div class="" style="background-color:#eaf3f7; padding-bottom: 100px;padding-top: 50px">
+    <div class="container-lrg flex text-center">
+      <div class="col-12"><br><br><br><br>
+        <h3 class="heading" style="color: #1c1c1c; font-weight: 900vh"><strong>
+          Conversational Marketing for leads and customers at scale.</strong> 
+        </h3>
+    <a class="hero-cta" style="color: #fff; font-size: 16px; text-decoration: none" href="pre-launch/pricing.html"><b>Get Started Now<b></a>      </div>
+    </div>
+  </div>
+  <!--
+|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+| FOOTER PRIVACY MINI
+|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+!-->
+
+  <div class="container-lrg footer-nav flex" style="background-color: #fff; padding: 20px 0px; border-top: 1px solid #e8ecff"">
+    <div class="col-12 horizontal" >
+      <a class="nav-link2" style="color: #464646; font-size: 12px">
+            ©2019 CoForm.io
+          </a>
+      <a class="nav-link" style="color: #464646; font-size: 12px" href="privacy-policy.html">Privacy policy</a>
+
+    </div>
+  </div>
+  </div>
+  </footer>
+</div> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</body>
+
+</html>

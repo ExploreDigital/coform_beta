@@ -1,0 +1,159 @@
+<!--
+|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+| START LANDING PAGE
+|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+!-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--
+|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+| START META
+|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+!-->
+<title>CoForm | Conversational Web Forms</title>
+<!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="CoForm allows you easily turn any form element on a web page into a conversational form interface.">
+  <meta name="keywords" content="conversational interfaces, conversational form, interface, bot, cui">
+  <link rel="icon" href="../assets/favicon.ico">
+  <link rel="publisher" href=""/>
+<!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content=""/>
+  <meta name="twitter:creator" content="">
+  <meta name="twitter:title" content="Turning web forms into conversations"/>
+  <meta name="twitter:description" content="CoForm allows you to easily turn any form element on a web page into a conversational form interface."/>
+  <meta name="twitter:image" content="" />
+
+<!-- Open Graph data -->
+  <meta property="og:title" content="Turning web forms into conversations"/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:image" content="" />
+  <!--
+|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+| START STYLESHEETS - SHOULD CLEAN UP
+|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+!-->
+  <link rel="stylesheet" type="text/css" href="css/form.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/devices.css">
+  <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+  <script src="js/form.js" defer></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/space10-community/conversational-form@0.9.70/dist/conversational-form.min.js" crossorigin></script>
+<!--
+|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+| START FAVICONS
+|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+!-->
+</head>
+<!--
+|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+| BODY START
+|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+!-->
+<body>
+  <nav>
+    <div class="" style="padding: 20px 0px 10px 0; background-color: #0871de; ">
+      <div class="col-12 spread">
+        <div>
+        <!-- Logo -->
+        <a class="logo" href="./index.html">
+        <img src="img/beta.png" style="max-height: 100%; height: 40px; padding-left: 30px">
+        </a>
+        <!-- Logo -->
+        </div>
+      </div>
+    </div>
+  </nav>
+<header class="header-b h-fullscreen" style="">
+<!--
+|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+| NAV END
+|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+!-->
+ <!-- FORM EXAMPLE --> 
+<!-- FORM EXAMPLE --> 
+  <div class="feature1" style="padding:0px 0">
+    <div class="container-lrg centerdevices col-12">
+      <div class="browserwrapper">
+        <div class="browser">
+          <div class="mask">
+            <form class="mask-img" id="form">
+              <fieldset>
+<label for="name">What's your name?</label>
+<input required cf-questions="Hey,
+         
+It looks like you caught us before we're ready!
+
+CoForm is still in development but we’re working hard to finish it up.
+
+If you'd like early access and early adopter pricing, just drop your email in the box below 😁" type="text" class="form-control" name="name" id="name"/>
+</fieldset>
+
+
+              <fieldset>
+                <label for="email">Email</label>
+                <input pattern=".+\@.+\..+" cf-error="E-mail not correct" cf-questions="If you want to get early access to CoForm and beta pricing, drop your email below!" type="email" class="form-control" name="email" id="your-email">
+              </fieldset>
+
+              <fieldset style="display: none;">
+                <label for="thats-all">Are you ready to submit the form?</label>
+                <select cf-questions="Are you ready to submit the form?" name="submit-form" id="submit-form" class="form-control">
+            <option></option>
+            <option>Yup</option>
+          </select>
+              </fieldset>
+
+              <fieldset style="display: none;">
+                <label for="thats-all">Want to start over?</label>
+                <select cf-questions="Want to start over?" name="repeat" id="repeat" class="form-control">
+            <option></option>
+            <option>Yes, let's go again</option>
+          </select>
+              </fieldset>
+
+              <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+            <div id="cf-context" class="dark-theme" role="cf-context" cf-context></div>
+          </div>
+        </div>
+      </div> <div style="text-align: center"><br><br>
+              <p6 class="chat-box__sign" style="color: #474747;">Powered by ⚡️ CoForm</p6></div><br><br>
+    </div>
+</div>
+    </div>
+  </header>
+   <!--
+|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+| CTA
+|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+!-->
+<footer align="center">
+  <div class="" style="background-color: #0871de">
+    <div class="container-sml flex text-center">
+      <div class="col-12">
+      </div>
+    </div>
+  </div>
+  <!--
+|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+| FOOTER PRIVACY MINI
+|‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+!-->
+
+  <div class=" footer-nav flex" style="background-color: #0871de; padding: 20px 0px">
+    <div class="col-12 horizontal" >
+      <a class="nav-link2" style="color: #fff; font-size: 12px">
+            ©2019 CoForm.io
+          </a>
+      <a class="nav-link" style="color: #fff; font-size: 12px" href="privacy-policy.html">Privacy policy</a>
+
+    </div>
+  </div>
+  </div>
+  </footer>
+</body>
+
+</html>
